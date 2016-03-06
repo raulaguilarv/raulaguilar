@@ -1,0 +1,20 @@
+//- Page details
+extends _head.jade
+
+block vars
+
+append js-head
+
+append css
+
+
+//- some commments
+//- block content
+block content
+	block page-content
+
+	include _footer.jade
+
+	block js-foot
+		script(type="text/javascript", src="assets/js/jquery-2.2.1.min.js")
+		script(type="text/javascript", src="assets/js/app.min.js")

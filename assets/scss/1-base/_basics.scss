@@ -1,0 +1,143 @@
+*{
+	box-sizing: border-box;
+}
+
+//  Typography
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,300,700,400italic);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,300);
+
+body {
+	-webkit-tap-highlight-color: $brand-accent;
+}
+
+
+html,
+body {
+
+}
+
+html {
+	overflow-x:hidden;
+}
+
+body {
+	font-size: $font-size_base;
+	line-height: 1.5;
+	font-family: 'Source Sans Pro', sans-serif;
+	color: $brand-text-primary;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-size-adjust: 100%;
+	height: 100vh;
+}
+
+.gigantic, .huge, .large, .bigger, .big,
+h1, h2, h3, h4, h5, h6 {
+	color: $brand-text-primary;
+	font-weight: 700;
+	span{
+		color: $brand-primary;
+	}
+}
+
+.gigantic {
+	font-size: 96px;
+	line-height: 0.9;
+	letter-spacing: -2px;
+
+}
+
+.huge, h1 {
+	font-size: $font-size_h1;
+	line-height: 1.14;
+	font-weight: 600;
+	letter-spacing: -1px;
+}
+
+.large, h2 {
+	font-size: $font-size_h2;
+	line-height: 1.14;
+}
+
+.bigger, h3 {
+	font-size: $font-size_h3;
+	line-height: 1.28;
+}
+
+.big, h4 {
+	font-size: $font-size_h4;
+	line-height: 1.28;
+}
+
+
+.small, small {
+	font-size: 10px;
+	line-height: 1.2;
+}
+
+p {
+	font-size: $font-size_base;
+	margin: 0 0 20px 0;
+}
+
+em {
+	font-style: italic;
+}
+
+strong {
+	font-weight: bold;
+}
+
+hr {
+	border: solid #dddddd;
+	border-width: 1px 0 0;
+	clear: both;
+	margin: 10px 0 30px;
+	height: 0;
+}
+
+// Links
+
+a {
+	color: $brand-primary;
+	text-decoration: none;
+	outline: 0;
+}
+
+a:hover, a:focus {
+	color: lighten($brand-primary, 20%);
+}
+
+a:disabled {
+	color: $brand-text-secondary;
+}
+
+// Selection colors (easy to forget)
+
+::selection {
+	background: $brand-primary--lighten;
+}
+
+::-moz-selection {
+	background: $brand-primary--lighten;
+}
+
+img {
+	display: block;
+}
+
+img::selection {
+	background: transparent;
+}
+
+img::-moz-selection {
+	background: transparent;
+}
+
+
+.t-center {
+	text-align: center;
+}
+
+.t-right {
+	text-align: right;
+}

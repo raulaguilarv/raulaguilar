@@ -1,0 +1,285 @@
+
+// * LiquidMe Grid System
+// * Copyright 2014, Raul Aguilar
+// * 0.1.0
+// * www.raulaguilar.com.mx/liquidme
+
+// Centrar elementos con 960.
+.container {
+  display: table;
+  position: relative;
+  padding: 0 $gutter-width;
+  margin: 0 auto;
+  width: $width-max;
+}
+@media #{$tablet-and-up} {
+  .container {
+    width: $width-max;
+    padding-left: $gutter-width; 
+    padding-right: $gutter-width; 
+  }
+}
+@media #{$screen-and-up} {
+  .container {
+    width: $width-max;
+    padding-left: $gutter-width*4; 
+    padding-right: $gutter-width*4; 
+  }
+}
+
+.container .row {
+  // margin-left: (-1 * $gutter-width / 2);
+  // margin-right: (-1 * $gutter-width / 2);
+  display: table;
+  width: $width-max;;
+}
+
+.full-container {
+  display: table;  
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.full-col {
+  padding: 0 !important;
+  margin: 0 !important
+}
+
+.full-container .row {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: table;
+}
+
+.section {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+  &.no-pad {
+    padding: 0;
+  }
+  &.no-pad-bot {
+    padding-bottom: 0;
+  }
+  &.no-pad-top {
+    padding-top: 0;
+  }
+}
+
+
+.row {
+  margin-left: auto;
+  margin-right: auto;
+
+
+// @media #{$widescreen-and-up} {}
+// @media #{$screen-and-up} {}
+// @media #{$tablet-and-up} {}
+// @media #{$phablet-and-up} {}
+// @media #{$mobile-and-down} {}
+// @media #{$phablet-and-down} {}
+// @media #{$tablet-and-down} {}
+  .col {
+    // @include transition(all, 0.3s, ease-in);
+    float: left;
+    padding: 0 $gutter-width / 2;
+
+    $i: 1;
+    @while $i <= $num-cols {
+      $perc: unquote((100 / ($num-cols / $i)) + "%");
+      &.mobile-#{$i} { 
+        width: $perc; 
+        margin-left: 0;
+      }
+      $i: $i + 1;
+    } 
+    $i: 1;
+    @while $i <= $num-cols {
+      $perc: unquote((100 / ($num-cols / $i)) + "%");
+      &.offset-mobile-#{$i} { 
+        margin-left: $perc; 
+      }
+      $i: $i + 1;
+    } 
+
+    @media #{$phablet-and-up} {
+
+      $i: 1;
+      @while $i <= $num-cols {
+        $perc: unquote((100 / ($num-cols / $i)) + "%");
+        &.phablet-#{$i} { 
+          width: $perc; 
+          margin-left: 0;
+        }
+        $i: $i + 1;
+      } 
+      $i: 1;
+      @while $i <= $num-cols {
+        $perc: unquote((100 / ($num-cols / $i)) + "%");
+        &.offset-phablet-#{$i} { 
+          margin-left: $perc;
+        }
+        $i: $i + 1;
+      } 
+
+    }
+
+    @media #{$tablet-and-up} {
+
+      $i: 1;
+      @while $i <= $num-cols {
+        $perc: unquote((100 / ($num-cols / $i)) + "%");
+        &.tablet-#{$i} { 
+          width: $perc; 
+          margin-left: 0;
+        }
+        $i: $i + 1;
+      } 
+      $i: 1;
+      @while $i <= $num-cols {
+        $perc: unquote((100 / ($num-cols / $i)) + "%");
+        &.offset-tablet-#{$i} { 
+          margin-left: $perc;
+        }
+        $i: $i + 1;
+      } 
+
+    }
+
+    @media #{$screen-and-up} {
+
+      $i: 1;
+      @while $i <= $num-cols {
+        $perc: unquote((100 / ($num-cols / $i)) + "%");
+        &.screen-#{$i} { 
+          width: $perc; 
+          margin-left: 0;
+        }
+        $i: $i + 1;
+      } 
+      $i: 1;
+      @while $i <= $num-cols {
+        $perc: unquote((100 / ($num-cols / $i)) + "%");
+        &.offset-screen-#{$i} { 
+          margin-left: $perc;
+        }
+        $i: $i + 1;
+      } 
+
+    }
+
+    @media #{$widescreen-and-up} {
+
+      $i: 1;
+      @while $i <= $num-cols {
+        $perc: unquote((100 / ($num-cols / $i)) + "%");
+        &.widescreen-#{$i} { 
+          width: $perc; 
+          margin-left: 0;
+        }
+        $i: $i + 1;
+      } 
+      $i: 1;
+      @while $i <= $num-cols {
+        $perc: unquote((100 / ($num-cols / $i)) + "%");
+        &.offset-widescreen-#{$i} { 
+          margin-left: $perc;
+        }
+        $i: $i + 1;
+      } 
+
+    }    
+
+  }
+
+}
+
+// @media #{$widescreen-and-up} {}
+// @media #{$screen-and-up} {}
+// @media #{$tablet-and-up} {}
+// @media #{$phablet-and-up} {}
+// @media #{$mobile-and-down} {}
+// @media #{$phablet-and-down} {}
+// @media #{$tablet-and-down} {}
+
+// Hide from:
+// WideScreen
+@media #{$widescreen-only} {
+  .hide-mobile          { display: inherit;}
+  .hide-phablet         { display: inherit;}
+  .hide-tablet          { display: inherit;}
+  .hide-screen          { display: inherit;}
+  .hide-widescreen      { display: none !important;}    
+
+  .show-mobile          { display: none;}
+  .show-phablet         { display: none;}
+  .show-tablet          { display: none;}
+  .show-screen          { display: none;}  
+  .show-widescreen      { display: inherit !important;}      
+}
+
+// Screen
+@media #{$screen-only} {
+  .hide-mobile          { display: inherit;}
+  .hide-phablet         { display: inherit;}
+  .hide-tablet          { display: inherit;}
+  .hide-screen          { display: none !important;}
+  .hide-widescreen      { display: inherit;}    
+
+  .show-mobile          { display: none;}
+  .show-phablet         { display: none;}
+  .show-tablet          { display: none;}
+  .show-screen          { display: inherit !important;}  
+  .show-widescreen      { display: none;}      
+}
+
+@media #{$tablet-only} {
+  .hide-mobile          { display: inherit;}
+  .hide-phablet         { display: inherit;}
+  .hide-tablet          { display: none !important;}
+  .hide-screen          { display: inherit;}
+  .hide-widescreen      { display: inherit;}    
+
+  .show-mobile          { display: none;}
+  .show-phablet         { display: none;}
+  .show-tablet          { display: inherit !important;}
+  .show-screen          { display: none;}  
+  .show-widescreen      { display: none;}  
+
+  .no-padding-tablet    { padding: 0 !important;}    
+}
+
+@media #{$phablet-only} {
+  .hide-mobile          { display: inherit;}
+  .hide-phablet         { display: none !important;}
+  .hide-tablet          { display: inherit;}
+  .hide-screen          { display: inherit;}
+  .hide-widescreen      { display: inherit;}    
+
+  .show-mobile          { display: none;}
+  .show-phablet         { display: inherit !important;}
+  .show-tablet          { display: none;}
+  .show-screen          { display: none;}  
+  .show-widescreen      { display: none;}      
+
+  .no-padding-phablet    { padding: 0 !important;}          
+}
+
+@media #{$mobile-only} {
+  .hide-mobile          { display: none !important;}
+  .hide-phablet         { display: inherit;}
+  .hide-tablet          { display: inherit;}
+  .hide-screen          { display: inherit;}
+  .hide-widescreen      { display: inherit;}  
+
+  .show-mobile          { display: inherit !important;}
+  .show-phablet         { display: none;}
+  .show-tablet          { display: none;}
+  .show-screen          { display: none;}  
+  .show-widescreen      { display: none;}  
+
+  .no-padding-mobile    { padding: 0 !important;}        
+
+}

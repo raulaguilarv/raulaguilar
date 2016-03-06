@@ -1,0 +1,162 @@
+// Variables
+//==========================//
+
+// INDEX
+//
+//  1. Grid
+//  2. Colores
+//  3. Typography
+//  4. Box Models
+//  5. Media Queries
+//==========================//
+
+// Grid
+//==========================//
+
+$num-cols: 12 !default;
+$gutter-width: 1rem !default;
+$z-gutter-width: 1% !default; 
+
+$element-top-margin: $gutter-width/3 !default;
+$element-bottom-margin: ($gutter-width*2)/3 !default;
+
+$width-max: 100%;
+
+$width: 100%;
+$cols: 12;
+$column-padding: 1%;
+$gutter-width: 1%;
+
+// Colores
+//==========================//
+
+// Colores primarios
+// Configuración básica
+$brand-primary:				#f75c4c;
+$brand-primary--darken:		darken($brand-primary, 10%);
+$brand-primary--lighten:	lighten($brand-primary, 10%);
+
+$brand-secondary:			#182336;
+
+$brand-accent:				#0DFF7C;
+$brand-accent--darken:		darken($brand-accent, 10%);
+$brand-accent--lighten:		lighten($brand-accent, 10%);
+
+$brand-text-primary: #717073;
+$brand-text-secondary: #EBEBEB;
+$brand-divider: #EBEBEB;
+
+$brand-bg:					#F8F8F8;
+$brand-icons:				#F8F8F8;
+$brand-link:				$brand-primary;
+$brand-success:				#5DD94B;
+$brand-warning:				#FCD06B;
+$brand-danger:				#FF6D6D;
+
+
+// 3. Typography
+//==========================//
+
+// Tamaño base tipográfica, también funciona para la altura base de los elementos
+// El definir un tamaño base, los titulares, párrafos y cualquier texto tendrán proporción y armonía entre sus dimensiones.
+$font-size_base:			22px; 
+
+$font-size_large:			18px;
+$font-size_small:			12px;
+
+$font-size_h1:				72px;
+$font-size_h2:				48px;
+$font-size_h3:				40px;
+$font-size_h4:				32px;
+$font-size_h5:				24px;
+$font-size_h6:				18px;
+
+
+// 4. Box model
+//==========================//
+
+// Algunas pequeñas variables útiles a la hora de estandarizar el modelado de cajas.
+
+$baseline:					$font-size_base;
+$fila:						$baseline;   
+
+$border-radius_base:		4px !default;
+
+
+// 5. Media Queries (Breakpoints)
+//==========================//
+
+// Ya no es solo escritorio en la web, hemos propuesto 5 tamaños para tener un mayor
+// control a la hora de crear proyectos.
+
+$mobile:				320px;
+$phablet:				520px;
+$tablet:				768px;
+$screen:				960px;
+$widescreen:			1200px;
+
+$break_mobile:				320px;
+$break_phablet:				520px;
+$break_tablet:				768px;
+$break_screen:				960px;
+$break_widescreen:			1200px;
+
+$widescreen_up:    $break_widescreen !default;
+$screen_up:        $break_screen !default;
+$tablet_up:        $break_tablet !default;
+$phablet_up:       $break_phablet !default;
+$mobile_up:        $break_mobile;
+$mobile:            $break_mobile !default;
+$phablet:           $break_phablet;
+$tablet:            $break_tablet;
+$screen:            $break_screen;
+$widescreen_down:  $break_widescreen - 1 !default;
+$screen_down:      $break_screen - 1 !default;
+$tablet_down:      $break_tablet - 1 !default;
+$phablet_down:     $break_phablet - 1 !default;
+$mobile_down:      $break_mobile - 1;
+
+
+// Por si las dudas, no necesario aplicar.
+$mobile-and-up: "only screen and (min-width : #{$mobile_up})" !default; 
+// 480px en adelante.
+$phablet-and-up: "only screen and (min-width : #{$phablet_up})" !default;
+// 768px en adelante.
+$tablet-and-up: "only screen and (min-width : #{$tablet_up})" !default;
+// 960px en adelante.
+$screen-and-up: "only screen and (min-width : #{$screen_up})" !default;
+// 1100px en adelante.
+$widescreen-and-up: "only screen and (min-width : #{$widescreen_up})" !default;
+
+// 1100px hacia abajo.
+$widescreen-and-down: "only screen and (max-width : #{$widescreen_down})" !default;
+// 960px hacia abajo.
+$screen-and-down: "only screen and (max-width : #{$screen_down})" !default;
+// 768px hacia abajo.
+$tablet-and-down: "only screen and (max-width : #{$tablet_down})" !default;
+// 480px hacia abajo.
+$phablet-and-down: "only screen and (max-width : #{$phablet_down})" !default;
+// 320px hacia abajo.
+$mobile-and-down: "only screen and (max-width : #{$mobile_down})" !default;
+
+// 1100px en adelante solamente.
+$widescreen-only: "only screen and (min-width : #{$screen})" !default;
+// Desde 960px hasta 768px.
+$screen-only: "only screen and (min-width : #{$tablet}) and (max-width : #{$screen})" !default;
+// Desde 768px hasta 480px.
+$tablet-only: "only screen and (min-width : #{$phablet}) and (max-width : #{$tablet})" !default;
+// Desde 480px hacia abajo solamente.
+$mobile-only: "only screen and (max-width : #{$phablet})" !default;
+$phablet-only: "only screen and (max-width : #{$phablet})" !default;
+
+
+// @media #{$widescreen-and-up} {}
+// @media #{$screen-and-up} {}
+// @media #{$tablet-and-up} {}
+// @media #{$phablet-and-up} {}
+// @media #{$mobile-and-down} {}
+// @media #{$phablet-and-down} {}
+// @media #{$tablet-and-down} {}
+
+
+// Modules

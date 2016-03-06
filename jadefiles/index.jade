@@ -1,0 +1,24 @@
+//- Ajustes de página
+
+//- Layout:
+extends layout/_default.jade
+
+//- Ajuste de head
+block vars
+	- var pageTitle = "Raúlsss Aguilar"
+	- var pageDesc = "Product Designer"
+
+//- ¿Necesitas algun archivo extra de javaScript aquí?
+append js-head
+
+//- ¿Necesitas algún archivo extra de css aquí?
+append css
+
+//- ¿Nuevo header?, sin problema, cambialo aquí.
+//- block page-header
+//- 		include ../components/header.jade
+
+block page-content
+	include components/_hero.jade
+
+append js-foot

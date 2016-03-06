@@ -1,0 +1,122 @@
+.container {
+	position: relative;
+	/* FallBack navegadores antiguos */
+	width: 100%;
+	display: table;
+	max-width: 100%; 						/* Default */
+	margin: 0 auto;							/* Default */
+}
+.row {
+	position: relative;
+
+	/* FallBack navegadores antiguos */
+	width: 100%;
+	display: table;
+	max-width: 100%; 						/* Default */
+	margin: 0 auto;							/* Default */
+
+	/* Flex */
+	display: flex;							/* Flexbox activado */
+	flex-wrap: wrap;
+
+	@include tablet{
+		flex-direction: row;
+	}
+
+	&.no-margin{
+		justify-content: flex-start;
+		margin: 0;
+	}
+
+	&.no-pad-global {
+		& .col {
+			padding: 0;
+		}
+	}
+}
+
+.contain{
+	max-width: 1200px;
+}
+.contain-1024{
+	max-width: 1024px;
+}
+.contain-1366{
+	max-width: 1366px;
+}
+
+.col{
+	/* Fallback Navegadores antiguos */
+	display: block;
+
+	/* Flex */
+	display: flex;
+	flex-direction: column;
+	padding: $column-padding*2;
+
+	transition: 0.3s all ease-in;
+
+}
+
+// Construcción de columnas
+$i: 1;
+@while $i <= $num-cols {
+	$perc: (($width / ($num-cols / $i)));
+
+	.mobile-#{$i} {
+		width: $perc;
+	}
+	$i: $i + 1;
+}
+
+$i: 1;
+@include tablet {
+	@while $i <= $num-cols {
+		$perc: (($width / ($num-cols / $i)));
+			.tablet-#{$i} {
+				width: $perc;
+			}
+			$i: $i + 1;
+	}
+}
+
+$i: 1;
+@include screen {
+	@while $i <= $num-cols {
+		$perc: (($width / ($num-cols / $i)));
+			.screen-#{$i} {
+				width: $perc;
+			}
+			$i: $i + 1;
+	}
+}
+
+$i: 1;
+@include widescreen {
+	@while $i <= $num-cols {
+		$perc: (($width / ($num-cols / $i)));
+			.widescreen-#{$i} {
+				width: $perc;
+			}
+			$i: $i + 1;
+	}
+}
+
+/* Utilidades */
+
+.no-pad {
+	padding: 0;
+}
+
+.flex {
+	display: flex;
+}
+
+.flex-center{
+	justify-content: center;
+	align-items: center;
+}
+
+.no-flex{
+	display: block;
+}
