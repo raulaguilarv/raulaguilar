@@ -2378,7 +2378,7 @@ th {
   box-sizing: border-box; }
 
 body {
-  -webkit-tap-highlight-color: #0DFF7C; }
+  -webkit-tap-highlight-color: rgba(247, 92, 76, 0.1); }
 
 html {
   overflow-x: hidden; }
