@@ -7,6 +7,7 @@
  */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,300,700,400italic);
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,300);
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600,700);
 html {
   font-family: sans-serif;
   /* 1 */
@@ -2393,6 +2394,7 @@ body {
 
 .gigantic, .huge, .large, .bigger, .big,
 h1, h2, h3, h4, h5, h6 {
+  font-family: 'Titillium Web', sans-serif;
   color: #717073;
   font-weight: 700; }
   .gigantic span, .huge span, .large span, .bigger span, .big span,
@@ -2484,11 +2486,34 @@ img::-moz-selection {
   .header-intro__hero {
     position: relative;
     top: 50%;
-    transform: translateY(-50%); }
+    left: 30px;
+    transform: translateY(-50%);
+    text-align: left;
+    text-transform: uppercase;
+    max-width: 300px;
+    margin: 0 auto; }
+    .header-intro__hero .brand {
+      position: absolute;
+      width: 214px;
+      opacity: 0.1;
+      top: -120px;
+      left: -120px; }
     .header-intro__hero .name {
+      font-weight: 300;
+      font-size: 64px;
       color: white;
       margin: 0;
       text-transform: uppercase;
       line-height: 1; }
     .header-intro__hero .jobTitle {
-      color: white; }
+      color: white;
+      font-size: 16px; }
+  .header-intro .goToDown {
+    position: absolute;
+    bottom: 22px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 27px;
+    height: 37px;
+    background: url("../img/goToDown.png") no-repeat top/contain;
+    cursor: pointer; }

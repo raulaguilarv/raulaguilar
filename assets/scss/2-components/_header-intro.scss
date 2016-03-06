@@ -9,12 +9,27 @@
   height: 100vh;
   width: 100%;
   text-align: center;
+
   &__hero{
     position: relative;
     top: 50%;
+    left: 30px;
     transform: translateY(-50%);
+    text-align: left;
+    text-transform: uppercase;
+    max-width: 300px;
+    margin: 0 auto;
 
+    .brand{
+      position: absolute;
+      width: 214px;
+      opacity: 0.1;
+      top: -120px;
+      left:-120px;
+    }
     .name{
+      font-weight: 300;
+      font-size: 64px;
       color: white;
       margin: 0;
       text-transform: uppercase;
@@ -22,7 +37,20 @@
     }
     .jobTitle{
       color: white;
+      font-size: 16px;
     }
 
+  }
+
+  .goToDown{
+    position: absolute;
+    bottom: $x;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 27px;
+    height: 37px;
+    background: url('../img/goToDown.png') no-repeat top / contain;
+    cursor: pointer;
   }
 }

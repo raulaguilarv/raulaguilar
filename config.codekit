@@ -1682,6 +1682,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/build\/assets\/img\/goToDown.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 544,
+		"inputAbbreviatedPath": "\/build\/assets\/img\/goToDown.png",
+		"outputAbbreviatedPath": "\/build\/assets\/img\/goToDown.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/build\/assets\/js\/app.min.js": {
 		"fileType": 64,
 		"ignore": 1,
@@ -1714,6 +1725,15 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
+		},
+	"\/build\/index.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/build\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/jadefiles\/components\/_hero.jade": {
 		"compileDebug": 1,
@@ -2074,7 +2094,7 @@
 			"flagValue": -1
 			},
 		"funcscope": {
-			"active": 0,
+			"active": 1,
 			"flagValue": -1
 			},
 		"futurehostile": {
@@ -2122,7 +2142,7 @@
 			"flagValue": -1
 			},
 		"loopfunc": {
-			"active": 0,
+			"active": 1,
 			"flagValue": -1
 			},
 		"maxcomplexity": {
@@ -2158,7 +2178,7 @@
 			"flagValue": -1
 			},
 		"multistr": {
-			"active": 0,
+			"active": 1,
 			"flagValue": -1
 			},
 		"newcap": {

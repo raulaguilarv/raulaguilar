@@ -5,6 +5,7 @@
 //  Typography
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,300,700,400italic);
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,300);
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600,700);
 
 body {
 	-webkit-tap-highlight-color: $brand-accent;
@@ -32,6 +33,7 @@ body {
 
 .gigantic, .huge, .large, .bigger, .big,
 h1, h2, h3, h4, h5, h6 {
+	font-family: 'Titillium Web', sans-serif;
 	color: $brand-text-primary;
 	font-weight: 700;
 	span{

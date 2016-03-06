@@ -15,7 +15,7 @@
 
 $num-cols: 12 !default;
 $gutter-width: 1rem !default;
-$z-gutter-width: 1% !default; 
+$z-gutter-width: 1% !default;
 
 $element-top-margin: $gutter-width/3 !default;
 $element-bottom-margin: ($gutter-width*2)/3 !default;
@@ -59,7 +59,7 @@ $brand-danger:				#FF6D6D;
 
 // Tamaño base tipográfica, también funciona para la altura base de los elementos
 // El definir un tamaño base, los titulares, párrafos y cualquier texto tendrán proporción y armonía entre sus dimensiones.
-$font-size_base:			22px; 
+$font-size_base:			22px;
 
 $font-size_large:			18px;
 $font-size_small:			12px;
@@ -77,8 +77,9 @@ $font-size_h6:				18px;
 
 // Algunas pequeñas variables útiles a la hora de estandarizar el modelado de cajas.
 
+$x:					$font-size_base;
 $baseline:					$font-size_base;
-$fila:						$baseline;   
+$fila:						$baseline;
 
 $border-radius_base:		4px !default;
 
@@ -118,7 +119,7 @@ $mobile_down:      $break_mobile - 1;
 
 
 // Por si las dudas, no necesario aplicar.
-$mobile-and-up: "only screen and (min-width : #{$mobile_up})" !default; 
+$mobile-and-up: "only screen and (min-width : #{$mobile_up})" !default;
 // 480px en adelante.
 $phablet-and-up: "only screen and (min-width : #{$phablet_up})" !default;
 // 768px en adelante.
