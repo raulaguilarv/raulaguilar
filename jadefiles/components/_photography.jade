@@ -1,0 +1,57 @@
+extends ../layout/_articles-gallery.jade
+block articlesGalleryVars
+
+  //- Content type
+  -var type = "photography"
+  -var scheme = "light"
+
+  //- Head Section
+  -var title = "Photography"
+  -var subTitle = "Instagram is the window of my eyes."
+  
+  //-   
+  
+
+
+append streamContent  
+  +dribbbleShot(
+    'Forbit Mobile App',
+    'Feb 10, 2015',
+    'shot.png',
+    'https://dribbble.com/shots/2516209-Daily-Design-005-Splash-login'
+    )
+    
+  +dribbbleShot(
+    'Daily – Video Content',
+    'Feb 7, 2016',
+    'shot2.png',
+    'https://dribbble.com/shots/2510352-Daily-Design-003-Video-Content'
+    )
+
+  +dribbbleShot(
+    'Burgerception App',
+    'Feb 7, 2016',
+    'shot3.png',
+    'https://dribbble.com/shots/2510345-Daily-Design-004-Product-view-in-App'
+    )
+
+  +dribbbleShot(
+    'Influencer Illustration',
+    'Feb 17, 2016',
+    'shot4.png',
+    'https://dribbble.com/shots/2533534-Daily-Design-007-Influencer-Illustration'
+    )
+    
+  +dribbbleShot(
+    'Guacamole Illustration',
+    'Feb 11, 2016',
+    'shot5.png',
+    'https://dribbble.com/shots/2518673-Daily-Design-006-Guacamole-Illustration'
+    )
+
+  +dribbbleShot(
+    'Personal Site',
+    'Jan 28, 2016',
+    'shot6.jpg',
+    'https://dribbble.com/shots/2487311-Daily-Design-002-Personal-Site-Homepage-Concept'
+    )

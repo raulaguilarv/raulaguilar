@@ -1630,6 +1630,22 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/assets\/scss\/2-components\/_articles-gallery.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/scss\/2-components\/_articles-gallery.scss",
+		"outputAbbreviatedPath": "\/build\/assets\/css\/_articles-gallery.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
 	"\/assets\/scss\/2-components\/_header-intro.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -1639,6 +1655,22 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/scss\/2-components\/_header-intro.scss",
 		"outputAbbreviatedPath": "\/build\/assets\/css\/_header-intro.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/assets\/scss\/2-components\/_nav-primary.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/scss\/2-components\/_nav-primary.scss",
+		"outputAbbreviatedPath": "\/build\/assets\/css\/_nav-primary.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1709,6 +1741,72 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/build\/assets\/img\/shot.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 355873,
+		"inputAbbreviatedPath": "\/build\/assets\/img\/shot.png",
+		"outputAbbreviatedPath": "\/build\/assets\/img\/shot.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/build\/assets\/img\/shot2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 446905,
+		"inputAbbreviatedPath": "\/build\/assets\/img\/shot2.png",
+		"outputAbbreviatedPath": "\/build\/assets\/img\/shot2.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/build\/assets\/img\/shot3.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 210978,
+		"inputAbbreviatedPath": "\/build\/assets\/img\/shot3.png",
+		"outputAbbreviatedPath": "\/build\/assets\/img\/shot3.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/build\/assets\/img\/shot4.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 77710,
+		"inputAbbreviatedPath": "\/build\/assets\/img\/shot4.png",
+		"outputAbbreviatedPath": "\/build\/assets\/img\/shot4.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/build\/assets\/img\/shot5.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 422229,
+		"inputAbbreviatedPath": "\/build\/assets\/img\/shot5.png",
+		"outputAbbreviatedPath": "\/build\/assets\/img\/shot5.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/build\/assets\/img\/shot6.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 152262,
+		"inputAbbreviatedPath": "\/build\/assets\/img\/shot6.jpg",
+		"outputAbbreviatedPath": "\/build\/assets\/img\/shot6.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/build\/assets\/js\/app.min.js": {
 		"fileType": 64,
 		"ignore": 1,
@@ -1742,6 +1840,15 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/build\/index.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/build\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/jadefiles\/components\/_hero.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
@@ -1753,6 +1860,50 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
 		},
+	"\/jadefiles\/components\/_nav.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/jadefiles\/components\/_nav.jade",
+		"outputAbbreviatedPath": "\/build\/_nav.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
+		},
+	"\/jadefiles\/components\/_photography.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/jadefiles\/components\/_photography.jade",
+		"outputAbbreviatedPath": "\/build\/_photography.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
+		},
+	"\/jadefiles\/components\/_portfolio.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/jadefiles\/components\/_portfolio.jade",
+		"outputAbbreviatedPath": "\/build\/_portfolio.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
+		},
+	"\/jadefiles\/components\/_writings.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/jadefiles\/components\/_writings.jade",
+		"outputAbbreviatedPath": "\/build\/_writings.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
+		},
 	"\/jadefiles\/index.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
@@ -1760,6 +1911,17 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/jadefiles\/index.jade",
 		"outputAbbreviatedPath": "\/build\/index.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
+		},
+	"\/jadefiles\/layout\/_articles-gallery.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/jadefiles\/layout\/_articles-gallery.jade",
+		"outputAbbreviatedPath": "\/build\/_articles-gallery.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0

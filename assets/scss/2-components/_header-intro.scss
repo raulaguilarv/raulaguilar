@@ -59,7 +59,7 @@
       width: 27px;
       height: 37px;
       background: url('../img/goToDown.png') no-repeat top / contain;
-      animation: bounce 1s infinite;
+      animation: bounce 1.3s infinite;
     }
 
     .arrowShadow{
@@ -72,7 +72,7 @@
         box-shadow: 0 0 5px black;
         border-radius:50%;
         opacity: 0.1;
-        animation: bounceShadow 1s infinite;
+        animation: bounceShadow 1.3s infinite;
     }
   }
 }

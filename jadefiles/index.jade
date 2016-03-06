@@ -5,7 +5,7 @@ extends layout/_default.jade
 
 //- Ajuste de head
 block vars
-	- var pageTitle = "Raúlsss Aguilar"
+	- var pageTitle = "Raúl Aguilar"
 	- var pageDesc = "Product Designer"
 
 //- ¿Necesitas algun archivo extra de javaScript aquí?
@@ -19,6 +19,10 @@ append css
 //- 		include ../components/header.jade
 
 block page-content
+	include components/_nav.jade
 	include components/_hero.jade
+	include components/_portfolio.jade
+	include components/_writings.jade
+	include components/_photography.jade
 
 append js-foot

@@ -1,0 +1,20 @@
+block articlesGalleryVars
+
+
+
+section(id="#{type}" class="gallery #{type} #{scheme}")
+  .articles-gallery__header
+    h2.articles-gallery__title= title 
+    p.articles-gallery__subtitle= subTitle
+
+  .articles-gallery__container
+    block streamContent
+      mixin dribbbleShot(title, date, img, url)
+        a(href="#{url}")
+          article.dribbbleShot
+            .dribbbleShot__img
+              img(src="assets/img/#{img}", alt="#title")
+            .dribbbleShot__data
+              .dribbbleShot__data-inner
+                h3= title
+                span= date

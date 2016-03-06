@@ -1,0 +1,140 @@
+.articles-gallery{
+  &__header{
+    padding: $x*8 $x*4;
+    text-align: center;
+  }
+  &__title{
+    margin: 0;
+    text-transform: capitalize;;
+    font-size: $font-size_h2;
+
+  }
+
+  &__subtitle{
+    margin: $x;
+    font-size: $font-size_h6;
+  }
+
+  &__container{
+    display: table;
+    background: $brand-primary;
+    margin-bottom: $x*12;
+  }
+
+  @media #{$phablet-and-down}{
+    &__header{
+      padding: $x*6 $x*2;
+    }
+    &__title{
+      font-size: $font-size_h2;
+
+    }
+
+    &__subtitle{
+      font-size: $font-size_h6;
+    }
+
+    &__container{
+    }
+  }
+}
+
+
+.dribbbleShot{
+  position: relative;
+  display: block;
+  float: left;
+  overflow: hidden;
+  width: calc(100% /3);
+
+  &__img{
+    img{
+      transition: 2s all ease-in-out;
+      width: 100%;
+    }
+  }
+
+  &__data{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+
+    transition: 0.2s all ease-in-out;
+
+      &-inner{
+        position: absolute;;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 40%;
+        margin: 0 auto;
+        z-index: 10;
+        opacity: 0;
+        transition: 0.6s all ease-in-out;
+      }
+      h3{
+        color: white;
+        font-size: $font-size_h5;
+
+      }
+      span{
+
+      }
+
+      &:before, &:after{
+        transition: 0.4s all ease-in-out;;
+        content: " ";
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform:translate(-50%, -50%) scale(0);
+        width: 50%;
+        padding-top: 50%;
+        opacity: 0;
+        border-radius: 50%;
+
+        background: $brand-secondary;
+      }
+      &:before{
+      }
+
+      &:after{
+
+        transition: 0.6s all ease-in-out;
+
+      }
+  }
+
+  &:hover{
+    .dribbbleShot__img{
+      img{
+        transform: scale(1.1);
+      }
+    }
+    .dribbbleShot__data{
+      background: rgba($brand-primary, 0.5);
+
+      &-inner{
+        transform: translate(-50%, -50%) scale(1.1);
+        opacity: 1;
+      }
+
+      &:before{
+        opacity: 0.6;
+        transform:translate(-50%, -50%) scale(1);
+      }
+
+      &:after{
+        opacity: 0.3;
+        transform:translate(-50%, -50%) scale(3);
+      }
+    }
+  }
+
+  @media #{$phablet-and-down} {
+    width: 100%;
+  }
+}

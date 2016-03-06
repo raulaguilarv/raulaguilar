@@ -4,12 +4,20 @@
   }
 
   60%{
-    margin-bottom: $x;
+    margin-bottom: $x*0.8;
   }
 
   80%{
-    margin-bottom: $x*1.5;
+    margin-bottom: $x;
   }
+  80% {
+  margin-bottom: 0;
+  }
+
+  90% {
+  margin-bottom: $x*0.4;
+  }
+
   100% {
   margin-bottom: 0;
   }
@@ -28,9 +36,14 @@
   }
 
   80%{
-  transform: scale(0.7);
+  transform: scale(1);
   transform-origin: bottom center;
   }
+  90% {
+  transform: scale(0.9);
+  transform-origin: bottom center;
+  }
+
   100% {
   transform: scale(1);
   transform-origin: bottom center;
