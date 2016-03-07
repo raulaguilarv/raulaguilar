@@ -83,6 +83,13 @@
 
   @media #{$tablet-and-down} {
     padding:$x;
+
+    &__data{
+      h3{
+        font-size: $font-size_h3;
+      }
+    }
+
   }
 
   @media #{$phablet-and-down} {

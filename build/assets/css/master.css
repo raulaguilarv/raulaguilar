@@ -2711,7 +2711,9 @@ img::-moz-selection {
     margin: 16px 0; }
   @media only screen and (max-width: 767px) {
     .articlePost {
-      padding: 16px; } }
+      padding: 16px; }
+      .articlePost__data h3 {
+        font-size: 24px; } }
   @media only screen and (max-width: 519px) {
     .articlePost {
       width: 100%;
