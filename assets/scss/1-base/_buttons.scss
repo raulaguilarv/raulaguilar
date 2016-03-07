@@ -1,0 +1,30 @@
+.btn{
+  background: white;
+  color: $brand-text-primary;
+  font-size: $font-size_h3;
+  padding: $x*1.5 $x*2;
+  border-radius: 80px;
+  box-shadow: 0 4px 24px 0 rgba($brand-text-primary, 0.3);
+  border: 2px solid $brand-text-primary;
+
+  transition: 0.2s all ease-in-out;
+
+  &:hover{
+    color: $brand-text-primary;
+    box-shadow: 0 3px 32px 0 rgba($brand-text-primary, 0.3);
+
+  }
+
+  &.primary{
+    color: $brand-primary;
+    box-shadow: 0 4px 24px 0 rgba($brand-text-primary, 0.3);
+    border: 2px solid $brand-primary;
+    &:hover{
+      color: $brand-accent;
+      box-shadow:
+        0 4px 24px 0 rgba($brand-primary, 0.2),
+        0 4px 32px 0 rgba($brand-accent, 0.3);
+      border: 2px solid $brand-accent;
+    }
+  }
+}

@@ -18,3 +18,24 @@ section(id="#{type}" class="gallery #{type} #{scheme}")
               .dribbbleShot__data-inner
                 h3= title
                 span= date
+
+      mixin instagramPost(title, location, img, url)
+        a(href="#{url}")
+          article.instagramPost
+            .instagramPost__img
+              img(src="assets/img/instagram/#{img}", alt="#title")
+            .instagramPost__data
+              .instagramPost__data-inner
+                h3= title
+                span= location
+
+      mixin articlePost(title, excerpt, img, url, date)
+        article.articlePost
+          a(href="#{url}").articlePost__img
+            img(src="assets/img/posts/#{img}", alt="#title")
+          .articlePost__data
+            h3: a(href="#{url}")= title
+            p= excerpt  
+  
+  .articles-gallery__footer
+    block articlesGalleryFooter

@@ -2,23 +2,45 @@
   &__header{
     padding: $x*8 $x*4;
     text-align: center;
+
+    &:after{
+      content: " ";
+      display: block;
+      width: 25%;
+      max-width: 150px;
+      height: 4px;
+      background:
+      linear-gradient(
+          90deg,
+          rgba($brand-primary, 1)0%,
+          rgba($brand-accent, 1) 100%);
+      border-radius: 4px;
+      text-align: center;
+      margin: 0 auto;
+    }
   }
   &__title{
     margin: 0;
     text-transform: capitalize;;
-    font-size: $font-size_h2;
+    font-size: $font-size_h1;
+    font-weight: 600;
 
   }
 
   &__subtitle{
     margin: $x;
-    font-size: $font-size_h6;
+    font-size: $font-size_h3;
+    font-weight: 200;
   }
 
   &__container{
     display: table;
-    background: $brand-primary;
-    margin-bottom: $x*12;
+    margin-bottom: $x*4;
+  }
+
+  &__footer{
+    margin-bottom: $x*9;
+    text-align: center;
   }
 
   @media #{$phablet-and-down}{
@@ -39,8 +61,37 @@
   }
 }
 
+.articlePost{
+  position: relative;
+  display: block;
+  float: left;
+  width: 50%;
+  padding: $x*3 $x*6;
 
-.dribbbleShot{
+  &__img{
+    img{
+      width: 100%;
+    }
+  }
+
+  &__data{
+    h3{
+      font-size: $font-size_h2;
+      margin: $x 0;
+    }
+  }
+
+  @media #{$tablet-and-down} {
+    padding:$x;
+  }
+
+  @media #{$phablet-and-down} {
+    width: 100%;
+    padding:$x*2;
+  }
+}
+
+.dribbbleShot, .instagramPost{
   position: relative;
   display: block;
   float: left;
@@ -109,12 +160,12 @@
   }
 
   &:hover{
-    .dribbbleShot__img{
+    .dribbbleShot__img, .instagramPost__img{
       img{
         transform: scale(1.1);
       }
     }
-    .dribbbleShot__data{
+    .dribbbleShot__data, .instagramPost__data{
       background: rgba($brand-primary, 0.5);
 
       &-inner{
@@ -123,7 +174,7 @@
       }
 
       &:before{
-        opacity: 0.6;
+        opacity: 0.8;
         transform:translate(-50%, -50%) scale(1);
       }
 
@@ -132,6 +183,34 @@
         transform:translate(-50%, -50%) scale(3);
       }
     }
+  }
+
+  @media #{$tablet-and-down} {
+    width: 50%;
+
+    &__data{
+        &-inner{
+        }
+        h3{
+          color: white;
+          font-size: $font-size_h6;
+
+        }
+        span{
+
+        }
+
+        &:before, &:after{
+
+        }
+        &:before{
+        }
+
+        &:after{
+
+        }
+    }
+
   }
 
   @media #{$phablet-and-down} {

@@ -32,13 +32,13 @@ $gutter-width: 1%;
 
 // Colores primarios
 // Configuración básica
-$brand-primary:				#f75c4c;
+$brand-primary:				#FB7272;
 $brand-primary--darken:		darken($brand-primary, 10%);
 $brand-primary--lighten:	lighten($brand-primary, 10%);
 
 $brand-secondary:			#182336;
 
-$brand-accent:				#0DFF7C;
+$brand-accent:				#B557A0;
 $brand-accent--darken:		darken($brand-accent, 10%);
 $brand-accent--lighten:		lighten($brand-accent, 10%);
 
@@ -61,15 +61,15 @@ $brand-danger:				#FF6D6D;
 // El definir un tamaño base, los titulares, párrafos y cualquier texto tendrán proporción y armonía entre sus dimensiones.
 $font-size_base:			16px;
 
-$font-size_large:			18px;
+$font-size_large:			20px;
 $font-size_small:			12px;
 
-$font-size_h1:				72px;
-$font-size_h2:				48px;
-$font-size_h3:				40px;
-$font-size_h4:				32px;
-$font-size_h5:				24px;
-$font-size_h6:				18px;
+$font-size_h1:				48px;
+$font-size_h2:				32px;
+$font-size_h3:				24px;
+$font-size_h4:				20px;
+$font-size_h5:				16px;
+$font-size_h6:				16px;
 
 
 // 4. Box model
