@@ -3,9 +3,10 @@ block articlesGalleryVars
 
 
 section(id="#{type}" class="gallery #{type} #{scheme}")
-  .articles-gallery__header
-    h2.articles-gallery__title= title 
-    p.articles-gallery__subtitle= subTitle
+  block blockHeader
+    .articles-gallery__header
+      h2.articles-gallery__title= title 
+      p.articles-gallery__subtitle= subTitle
 
   .articles-gallery__container
     block streamContent
